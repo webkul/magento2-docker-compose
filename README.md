@@ -82,5 +82,6 @@ or,
 
 > docker exec -i mysql cat /var/log/check.log
 
+
 Now, your server setup is all ready, now hit your domain name or IP to install Magento 2.
 
