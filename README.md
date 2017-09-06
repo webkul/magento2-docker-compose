@@ -72,7 +72,7 @@ To begin with, please install docker and docker-compose on your ubuntu 14.04 ser
 
 > docker ps
 
-8). Your database credentials are mentioned in mysql.sh file. To get database user password,
+8). Your database credentials are mentioned in mysql.sh file. Database user password will be randomly generated. Database user password will be stored in /var/log/check.log. To get database user password,
 
 > docker exec -ti mysql bash
  
