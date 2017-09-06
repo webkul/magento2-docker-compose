@@ -36,7 +36,9 @@ In this project, we are using:
 
 > Magento 2.1.6
 
-To begin with, please install docker and docker-compose on your ubuntu 14.04 server. Then follow the following steps:
+To begin with, please install docker and docker-compose on your ubuntu 14.04 server. 
+
+Then follow the following steps:
 
 1). Clone or download this repository as 
 
@@ -83,5 +85,5 @@ or,
 > docker exec -i mysql cat /var/log/check.log
 
 
-Now, your server setup is all ready, now hit your domain name or IP to install Magento 2.
+Now, your server setup is all ready, now hit your domain name or IP to install Magento 2. For more details, please refer to blog https://cloudkul.com/blog/magento-2-docker-compose/. 
 
