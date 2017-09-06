@@ -1,10 +1,9 @@
 #!/bin/bash
 
-set -x
 
 database_name=magento_db           ## Mention database name
 database_user=magento_user         ## Mention database user
-database_root_password=webkul123    ## Mention mysql root password.
+database_root_password=rootpassword123    ## Mention mysql root password.
 ## Same password must be passed as argument during image build.
 
 ## Database user password will be randomly generated
