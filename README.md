@@ -3,7 +3,7 @@
 This repository corresponds to architecture setup as mentioned in blog https://cloudkul.com/blog/magento-2-docker-compose/.
 
 
-###### Docker-Compose Tool
+##### Docker-Compose Tool
 
 As mentioned in Docker docs, Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration. 
 
