@@ -45,5 +45,6 @@ To begin with, please install docker and docker-compose on your ubuntu 14.04 ser
 2) Set/modify mysql root and database credentials. Go to magento2-docker-compose/docker-compose.yml and change mysql root password in:
 
 > args:
-        - mysql_password=rootpassword123
+      
+    - mysql_password=rootpassword123
 
