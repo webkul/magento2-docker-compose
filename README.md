@@ -36,3 +36,14 @@ In this project, we are using:
 
 > Magento 2.1.6
 
+To begin with, please install docker and docker-compose on your ubuntu 14.04 server. Then follow the following steps:
+
+1). Clone or download this repository as 
+
+> git clone https://github.com/webkul/magento2-docker-compose.git
+
+2) Set/modify mysql root and database credentials. Go to magento2-docker-compose/docker-compose.yml and change mysql root password in:
+
+> args:
+        - mysql_password=rootpassword123
+
