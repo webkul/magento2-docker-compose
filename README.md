@@ -42,7 +42,45 @@ To begin with, please install docker and docker-compose on your ubuntu 14.04 ser
 
 > git clone https://github.com/webkul/magento2-docker-compose.git
 
-2) Set/modify mysql root and database credentials. Go to magento2-docker-compose/docker-compose.yml and change mysql root password in database_server in:
+2) Set/modify mysql root credentials. Go to ~/magento2-docker-compose/docker-compose.yml and change mysql root password in database_server in:
 
 > mysql_password=rootpassword123
+
+3). Modify change database name, database user and mysql root credentials in ~/magento2-docker-compose/database_server/mysql.sh in:
+
+> database_name=magento_db           ## Mention database name
+
+> database_user=magento_user         ## Mention database user
+
+> database_root_password=rootpassword123    ## Mention mysql root password.
+
+4). Build the docker image.
+
+> docker-compose build
+
+5). Check the built image as:
+
+> docker images
+
+6). Run the containers from built image as:
+
+> docker-compose up -d
+
+7). Check the running docker containers by command:
+
+> docker-compose ps
+
+> docker ps
+
+8). Your database credentials are mentioned in mysql.sh file. To get database user password,
+
+> docker exec -ti mysql bash
+ 
+> cat /var/log/check.log
+ 
+or,
+
+> docker exec -i mysql cat /var/log/check.log
+
+Now, your server setup is all ready, now hit your domain name or IP to install Magento 2.
 
