@@ -18,7 +18,7 @@ services:
     build:
       context: ./database_server/
       args:
-        - mysql_password=webkul123
+        - mysql_password=rootpassword123
     container_name: mysql
     volumes: 
       - ./database_server/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
