@@ -1,0 +1,27 @@
+version: '3'
+services:
+  web_server:
+    build:
+      context: ./web_server/
+    container_name: apache2
+    volumes:
+      - ./magento2:/var/www/html  
+      - ./web_server/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+      - ./web_server/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
+      - ./web_server/envvars:/etc/apache2/envvars
+    ports:
+      - "80:80"
+    links:
+      - database_server
+
+  database_server:
+    build:
+      context: ./database_server/
+      args:
+        - mysql_password=webkul123
+    container_name: mysql
+    volumes: 
+      - ./database_server/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
+      - ./database_server/mysql.sh:/etc/mysql.sh
+    ports:
+      - "3306:3306"
