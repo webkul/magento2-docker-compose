@@ -19,3 +19,20 @@ Getting started with docker-compose is a few steps process:
 
 > Run ‘docker-compose up -d’ to run the docker containers. After image build up, we can run all of our containers as mentioned in configuration files by this single command.
 
+
+##### Dockerizing Magento 2 with Docker-Compose
+
+Docker is an open-source project that can be integrated with almost all the applications allowing scope of isolation and flexibility. It can be integrated with Magento 2 as well. Magento is an e-commerce platform written in PHP and based on zend framework available under both open-source and commercial licenses.
+
+In this project, we are using:
+
+> Operating system: Ubuntu 14.04
+
+> Web Server: Apache2
+
+> Database Server: Mysql-server-5.6
+
+> PHP version: PHP-7.0
+
+> Magento 2.1.6
+
