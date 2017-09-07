@@ -20,6 +20,6 @@ exit 1
 else
 mysql -u root -p$database_root_password -e "create database $database_name;"
 mysql -u root -p$database_root_password -e "grant all on $database_name.* to '$database_user'@'%' identified by '$database_user_password';"
-echo "Your database user "$database_user" password is "$database_user_password"" > /var/log/check.log
+echo "Your database user "$database_user" password for database "$database_name" is "$database_user_password"" > /var/log/check.log
 fi
 
