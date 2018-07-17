@@ -70,3 +70,10 @@ Then follow the following steps:
 
 Now, your server setup is all ready, now hit your domain name or IP to install Magento 2. For more details, please refer to blog https://cloudkul.com/blog/magento-2-docker-compose/. 
 
+## GETTING SUPPORT
+
+If you have any issues, contact us at support@webkul.com or raise ticket at https://webkul.uvdesk.com/
+
+
+Thank you.
+
