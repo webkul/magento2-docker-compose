@@ -1,9 +1,9 @@
-#### Setting Up Magento 2 on Multi-container Architecture Using Docker-Compose tool
+### Setting Up Magento 2 on Multi-container Architecture Using Docker-Compose tool
 
 This repository corresponds to architecture setup as mentioned in blog https://cloudkul.com/blog/magento-2-docker-compose/.
 
 
-##### Docker-Compose Tool
+#### Docker-Compose Tool
 
 As mentioned in Docker docs, Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration. 
 
@@ -20,23 +20,21 @@ Getting started with docker-compose is a few steps process:
 > Run ‘docker-compose up -d’ to run the docker containers. After image build up, we can run all of our containers as mentioned in configuration files by this single command.
 
 
-##### Dockerizing Magento 2 with Docker-Compose
+#### Dockerizing Magento 2 with Docker-Compose
 
 Docker is an open-source project that can be integrated with almost all the applications allowing scope of isolation and flexibility. It can be integrated with Magento 2 as well. Magento is an e-commerce platform written in PHP and based on zend framework available under both open-source and commercial licenses.
 
 In this project, we are using:
 
-> Operating system: Ubuntu 14.04
+> Operating system: Ubuntu 16.04
 
 > Web Server: Apache2
 
-> Database Server: Mysql-server-5.6
+> Database Server: Mysql-server-5.7
 
-> PHP version: PHP-7.0
+> PHP version: PHP-7.1
 
-> Magento 2.1.6
-
-To begin with, please install docker and docker-compose on your ubuntu 14.04 server. 
+To begin with, please install docker and docker-compose on your ubuntu 16.04 server. 
 
 Then follow the following steps:
 
@@ -44,46 +42,40 @@ Then follow the following steps:
 
 > git clone https://github.com/webkul/magento2-docker-compose.git
 
-2) Set/modify mysql root credentials. Go to ~/magento2-docker-compose/docker-compose.yml and change mysql root password in database_server in:
+2) Set mysql root credentials and name of the database to be created . Go to ~/magento2-docker-compose/docker-compose.yml and change mysql root password in database_server in:
 
-> mysql_password=rootpassword123
+> mysql_password=
 
-3). Modify change database name, database user and mysql root credentials in ~/magento2-docker-compose/database_server/mysql.sh in:
+> mysql_database=
 
-> database_name=magento_db           ## Mention database name
+3). Download Magento 2 version you wish to dockerize and upload it in directory magento2 in parallel docker-compose.yml.
 
-> database_user=magento_user         ## Mention database user
-
-> database_root_password=rootpassword123    ## Mention mysql root password.
+> Go to https://magento.com/tech-resources/download? .
 
 4). Build the docker image.
 
 > docker-compose build
 
-5). Check the built image as:
+6). Check the built image as:
 
 > docker images
 
-6). Run the containers from built image as:
+7). Run the containers from built image as:
 
 > docker-compose up -d
 
-7). Check the running docker containers by command:
+8). Check the running docker containers by command:
 
 > docker-compose ps
 
 > docker ps
 
-8). Your database credentials are mentioned in mysql.sh file. Database user password will be randomly generated. Database user password will be stored in /var/log/check.log. To get database user password,
-
-> docker exec -ti mysql bash
- 
-> cat /var/log/check.log
- 
-or,
-
-> docker exec -i mysql cat /var/log/check.log
-
-
 Now, your server setup is all ready, now hit your domain name or IP to install Magento 2. For more details, please refer to blog https://cloudkul.com/blog/magento-2-docker-compose/. 
+
+#### GETTING SUPPORT
+
+If you have any issues, contact us at support@webkul.com or raise ticket at https://webkul.uvdesk.com/
+
+
+Thank you.
 
