@@ -33,8 +33,6 @@ In this project, we are using:
 > Database Server: Mysql-server-5.7
 
 > PHP version: PHP-7.1
- 
-> Magento 2.2.5  (If you want to use any other Magento 2 version, upload it in magento2 directory)
 
 To begin with, please install docker and docker-compose on your ubuntu 16.04 server. 
 
@@ -50,19 +48,23 @@ Then follow the following steps:
 
 > mysql_database=
 
-3). Build the docker image.
+3). Download Magento 2 version you wish to dockerize and upload it in directory magento2 in parallel docker-compose.yml.
+
+> Go to https://magento.com/tech-resources/download? .
+
+4). Build the docker image.
 
 > docker-compose build
 
-4). Check the built image as:
+6). Check the built image as:
 
 > docker images
 
-5). Run the containers from built image as:
+7). Run the containers from built image as:
 
 > docker-compose up -d
 
-6). Check the running docker containers by command:
+8). Check the running docker containers by command:
 
 > docker-compose ps
 
