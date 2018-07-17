@@ -26,4 +26,3 @@ mysql -u root -p$MYSQL_ROOT_PASSWORD -e "grant all on $MYSQL_DATABASE.* to 'root
 supervisorctl stop database_creation && supervisorctl remove database_creation
 echo "Database $MYSQL_DATABASE created"
 fi
-
