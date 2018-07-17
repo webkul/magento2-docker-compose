@@ -1,9 +1,9 @@
-#### Setting Up Magento 2 on Multi-container Architecture Using Docker-Compose tool
+### Setting Up Magento 2 on Multi-container Architecture Using Docker-Compose tool
 
 This repository corresponds to architecture setup as mentioned in blog https://cloudkul.com/blog/magento-2-docker-compose/.
 
 
-##### Docker-Compose Tool
+#### Docker-Compose Tool
 
 As mentioned in Docker docs, Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration. 
 
@@ -20,7 +20,7 @@ Getting started with docker-compose is a few steps process:
 > Run ‘docker-compose up -d’ to run the docker containers. After image build up, we can run all of our containers as mentioned in configuration files by this single command.
 
 
-##### Dockerizing Magento 2 with Docker-Compose
+#### Dockerizing Magento 2 with Docker-Compose
 
 Docker is an open-source project that can be integrated with almost all the applications allowing scope of isolation and flexibility. It can be integrated with Magento 2 as well. Magento is an e-commerce platform written in PHP and based on zend framework available under both open-source and commercial licenses.
 
@@ -70,7 +70,7 @@ Then follow the following steps:
 
 Now, your server setup is all ready, now hit your domain name or IP to install Magento 2. For more details, please refer to blog https://cloudkul.com/blog/magento-2-docker-compose/. 
 
-## GETTING SUPPORT
+#### GETTING SUPPORT
 
 If you have any issues, contact us at support@webkul.com or raise ticket at https://webkul.uvdesk.com/
 
